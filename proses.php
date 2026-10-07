@@ -95,7 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="data-row"><span class="label">Tech Stack Dikuasai:</span> <?php echo htmlspecialchars($tech_stack_str); ?></div>
                 <div class="data-row"><span class="label">Alasan:</span> <?php echo nl2br(htmlspecialchars($alasan)); ?></div>
 
-                <a href="pendaftaran.html" class="back-btn">Kembali ke Form</a>
+                <a href="pendaftaran.php" class="back-btn">Kembali ke Form</a>
             </div>
 
         </body>
@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Gagal menyimpan data ke database: " . $e->getMessage();
     }
 } else {
-    header("Location: pendaftaran.html");
+    header("Location: pendaftaran.php");
     exit();
 }
 ?>
