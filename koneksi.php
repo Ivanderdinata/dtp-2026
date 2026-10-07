@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$db   = 'db_pkl'; // Ubah sesuai dengan nama database kamu
-$user = 'root'; // Ubah dengan username database kamu, default XAMPP adalah 'root'
-$pass = ''; // Ubah dengan password database kamu, default XAMPP biasanya kosong
+$db   = 'db_pkl';
+$user = 'root';
+$pass = '';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
